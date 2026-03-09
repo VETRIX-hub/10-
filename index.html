@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-<title>زيادة متابعين تيك توك مجانا</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        width: 320px;
+        text-align: center;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+        width:320px;
+        text-align: center;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 12px;
+        background: #74ebd5;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        transition: 0.3s;
+    }
+    button:hover {
+        background: #4ecdc4;
+    }
+    #step2 {
+        display: none;
+    }
+</style>
+<script>
+function goStep2() {
+    document.getElementById("step1").style.display = "none";
+    document.getElementById("step2").style.display = "block";
+}
+
+function finishSignup() {
+    alert("تم إنشاء الحساب بنجاح! (تجربة فقط، لا يتم حفظ أي بيانات)");
+}
+</script>
 </head>
-
 <body>
+  div class="container">
 
-<h1>مرحبا بكم في موقع VETRIX للثقة والأمن</h1>
-<p>هذا الموقع مطور من قبل SAJED</p>
+    <div id="step1">
+        <h1>تسجيل الدخول</h1>
+        <input type="email" placeholder="البريد الإلكتروني"><br>
+        <input type="password" placeholder="كلمة المرور"><br>
+        <button onclick="goStep2()">التالي</button>
+    </div>
+
+    <div id="step2">
+        <h1>معلومات إضافية</h1>
+        <input type="text" placeholder="اسم المستخدم"><br>
+        <input type="text" placeholder="تاريخ الميلاد"><br>
+        <button onclick="finishSignup()">إنهاء التسجيل</button>
+    </div>
+
+</div>
 
 </body>
-</html>
+      </html>
